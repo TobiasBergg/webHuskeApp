@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webHuskeApp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>webHuskeApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="webHuskeApp-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="webHuskeApp:war exploded" />
+    </root>
+  </artifact>
+</component>
