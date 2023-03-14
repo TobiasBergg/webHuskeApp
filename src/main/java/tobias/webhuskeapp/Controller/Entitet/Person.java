@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static jdk.internal.org.jline.utils.Colors.s;
-
 public class Person {
 
-    List<String> stringArrayList;
     String navn;
     String kode;
+    List<String> stringArrayList;
 
+    public Person(String navn, String kode, List<String> stringArrayList) {
+        this.navn = navn;
+        this.kode = kode;
+        this.stringArrayList = new ArrayList<>(stringArrayList);
+    }
 
     public Person(String navn, String kode, String s) {
         this.navn = navn;
@@ -27,5 +30,9 @@ public class Person {
 
     public String getKode() {
         return kode;
+    }
+
+    public List<String> getStringArrayList() {
+        return stringArrayList;
     }
 }
