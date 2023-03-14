@@ -26,4 +26,12 @@ public class PersonMapper {
     public static Person getPerson(String navn) {
         return copyPerson(personMap.getOrDefault(navn, null));
     }
+
+    public static String savePerson(Person person) {
+        if (personMap.containsKey(person.getNavn())){
+            personMap.put(person.getNavn(),person);
+            return "Opdatere " + person.getNavn();
+        }
+        return "Gemmer " + person.getNavn();
+    }
 }

@@ -13,4 +13,8 @@ public class Facade {
     public static Person getPerson(String navn) {
        return PersonMapper.getPerson(navn);
     }
+
+    public static String savePerson(Person person) {
+        return PersonMapper.savePerson(person);
+    }
 }
